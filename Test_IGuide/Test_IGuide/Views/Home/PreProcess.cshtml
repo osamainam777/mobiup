@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "PreProcess";
+}
+@model Test_IGuide.Models.PreprocessModel
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<p></p>
+@using (Html.BeginForm())
+{
+    <div>
+        Enter Screen Name
+        @Html.TextBoxFor(m => m._Name, new { @class = "form-control" })
+    </div>
+    <div>
+        <input class="form-control"
+               value="Start Processing"
+               type="submit" />
+        </div>
+
+}

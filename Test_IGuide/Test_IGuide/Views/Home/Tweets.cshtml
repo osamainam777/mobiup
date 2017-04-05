@@ -1,0 +1,24 @@
+﻿@model Test_IGuideModels.TweetsModel
+@{
+    ViewBag.Title = "Tweets";
+    
+}
+
+<h2>Tweets</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        Enter Screen Name
+        @Html.TextBoxFor(m => m.ScreenNameTweets, new {@class = "form-control" })
+    </div>
+    <div>
+        <input class="form-control"
+               value="Submit"
+               type="submit" />
+        <table style="width:100%;"><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></table>
+    </div>
+
+}
+
+ 
+
